@@ -16,7 +16,8 @@ int main() {
 	print("Before:\n");
 	print(convert(array, size) + "\n");
 
-	sort_selected(array, size);
+	//sort_selected(array, size);
+	sort_inserted(array, size);
 
 	print("After:\n");
 	print(convert(array, size) + "\n");
