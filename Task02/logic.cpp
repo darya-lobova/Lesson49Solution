@@ -20,7 +20,7 @@ string find_dublicates(int array[], int length) {
 	string s = "";
 	for (int i = 0; i < length; i++)
 	{
-		if (array[0] == array[i + 1]) {
+		if (array[i] == array[i + 1]) {
 			s += to_string(array[i]) + " ";
 		}
 		else {
