@@ -4,7 +4,7 @@ void sort_inserted(int array[], int length) {
 
 	for (int i = 1; i < length; i++)
 	{
-		
+
 		int key = array[i];
 		int j = i - 1;
 
@@ -18,13 +18,11 @@ void sort_inserted(int array[], int length) {
 
 string find_dublicates(int array[], int length) {
 	string s = "";
-	for (int i = 0; i < length; i++)
-	{
+	for (int i = 0; i < length - 1; i++) {
 		if (array[i] == array[i + 1]) {
-			s += to_string(array[i]) + " ";
-		}
-		else {
-			s += "";
+			if (i == 0 || array[i] != array[i - 1]) {
+				s += to_string(array[i]) + " ";
+			}
 		}
 	}
 	return s;
